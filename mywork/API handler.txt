@@ -1,0 +1,59 @@
+
+
+-> User's API
+
+1* to store record in database
+
+url : http://localhost:3000/user/save
+method : post
+
+data attached : name , email , password , mobile , address , city , gender    
+
+--------------------------------------------------
+
+2* to fetch record from database
+
+url : http://localhost:3000/user/fetch
+
+data attached : if required condition object (query string)
+method : get
+
+response : json
+
+--------------------------------------------------
+
+3* to delete record from database
+
+resource url : https://reqbin.com/Article/HttpDelete
+
+url : http://localhost:3000/user/delete
+
+data attached : if required condition object (body id & password)
+method : delete
+
+response : json
+
+-------------------------------------------------------
+
+4* to update record from database
+
+resource url : https://reqbin.com/Article/HttpDelete
+
+url : http://localhost:3000/user/update
+
+data attached : if required object is to be added which holds both(condion object + data to be updated) (in body)
+method : patch
+
+response : json
+
+--------------------------------------------------
+
+5* to login user from database & generate jwt
+
+url : http://localhost:3000/user/login
+
+data attached : required condition object (body id & password)
+method : post
+
+response : json
+
